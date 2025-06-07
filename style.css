@@ -25,7 +25,7 @@ label {
     margin: 0.3rem;
 }
 
-input[type="number"] {
+input[type="text"] {
     padding: 10px;
     text-align: center;
 }
