@@ -1,3 +1,75 @@
 body {
-    background-color: hsl(0, 0%, 0%)
+    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left-side */
+
+label {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0.3rem;
+}
+
+input[type="number"] {
+    padding: 10px;
+    text-align: center;
+}
+
+input[name="bill-amount"] {
+    width: 100%;
+}
+
+.tip-input-container {
+    display: flex;
+}
+
+input[name="tip-percentage"] {
+    width: 60%;
+}
+
+#minusButton, #plusButton {
+    flex-grow: 1;
+    border: none;
+    background-color: rgba(147, 137, 134, 0.302);
+}
+
+#minusButton:hover, #plusButton:hover {
+    cursor: pointer;
+    background-color:  rgba(147, 137, 134, 0.561);
+}
+
+/* Adjust left and right containers */
+
+.left, .right {
+    /* outline: 1px solid orange; */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Right-side */
+
+.right {
+    flex: 1;
+}
+
+.tip-total, .bill-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin: 1rem;
 }
