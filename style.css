@@ -25,7 +25,7 @@ label {
     margin: 0.3rem;
 }
 
-input[type="text"] {
+input[type="text"], input[type="number"] {
     padding: 10px;
     text-align: center;
 }
@@ -52,6 +52,22 @@ input[name="tip-percentage"] {
     cursor: pointer;
     background-color:  rgba(147, 137, 134, 0.561);
 }
+
+#btn-calculate {
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    
+    /* normalize decoration */
+    background-color: rgba(147, 137, 134, 0.302);
+    border: none;
+}
+
+#btn-calculate:hover {
+    cursor: pointer;
+    background-color:  rgba(147, 137, 134, 0.561);
+}
+
 
 /* Adjust left and right containers */
 
