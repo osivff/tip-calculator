@@ -10,30 +10,31 @@
 <body>
     <h1>Tip Calculator</h1>
     <main>
-        <form action="">
+        <form>
             <div class="left">
                 <div class="input-container">
-                    <label for="bill-amount">Bill</label>
+                    <label for="fbill">Bill</label>
                     <div class="bill-input-container">
-                        <input type="text" id="fbill" name="bill-amount" min="1" placeholder="$0.00">
+                        <input type="number" id="fbill" name="bill-amount" min="1" placeholder="$0.00">
                     </div>
-                    <label for="tip-percentage">Tip</label>
+                    <label for="ftip">Tip</label>
                     <div class="tip-input-container">
                         <button type="button" id="minusButton">-</button>
                         <input type="text" id="ftip" value="%15" name="tip-percentage" min="15">
                         <button type="button" id="plusButton">+</button>
                     </div>
                 </div>
+                <button type="button" id="btn-calculate">Calculate</button>
             </div>
 
             <div class="right">
                 <div class="tip-total">
                     <span class="title">Tip</span>
-                    <span class="tip total-amount">$0.00</span>
+                    <span class="tip total-amount">$<span id="tip-amount">0.00</span></span>
                 </div>
                 <div class="bill-total">
                     <span class="title">Total</span>
-                    <span class="bill total-amount">$0.00</span>
+                    <span class="bill total-amount">$<span id="bill-amount">0.00</span></span>
                 </div>
             </div>
         </form>
